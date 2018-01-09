@@ -1,0 +1,35 @@
+.Home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+
+  .row {
+    margin: 0;
+
+    .box {
+      .content {
+        margin-bottom: 20px;
+        background: white;
+        padding: 0;
+        border: 1px solid lightgray;
+        margin: 10px;
+        box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.239);
+
+        .texts {
+          padding: 10px;
+          color: #646464;
+
+          .title {
+            margin: 10px 0;
+            font-size: 22px;
+          }
+        }
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

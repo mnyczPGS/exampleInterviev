@@ -1,0 +1,43 @@
+.Contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+
+  .content {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.239);
+
+    form {
+      label {
+        display: inline-flex;
+        width: 85px;
+        border-bottom: 1px solid #e3e3e3;
+        line-height: 28px;
+
+        .red {
+          color: red;
+        }
+      }
+
+      input {
+        border: none;
+        border-bottom: 1px solid #e3e3e3;
+        line-height: 27px;
+      }
+
+      .not-validate {
+        border-color: red;
+      }
+    }
+
+    .submit {
+      float: right;
+    }
+  }
+}
