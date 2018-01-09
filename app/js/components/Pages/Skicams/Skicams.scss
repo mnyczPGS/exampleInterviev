@@ -1,0 +1,30 @@
+.Skicams{
+  .cam-container{
+    background-color: white;
+
+    &-top{
+      height: 50px;
+      text-align: center; 
+
+      .title{
+        font-size: 20px;
+        line-height: 50px;
+      }
+
+      .date{
+        position: absolute;
+        top: 0;
+        right: 20px;
+      }
+    }
+
+    &-cams{
+      background-color: whitesmoke;
+      text-align: center;
+
+      img{
+        max-width: 100%;
+      }
+    }
+  }
+}

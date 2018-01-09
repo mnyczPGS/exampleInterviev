@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Col } from 'reactstrap';
 
-export class Box extends Component {
+export default class Box extends Component {
 
 
   render() {
@@ -20,13 +20,3 @@ export class Box extends Component {
     )
   }
 }
-
-const mapStateToProps = (state) => ({
-
-})
-
-const mapDispatchToProps = {
-
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Box)

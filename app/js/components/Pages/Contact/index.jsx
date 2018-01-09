@@ -38,7 +38,7 @@ class Home extends Component {
     if (regex.test(this.state.mail)) {
       validate.mail = true;
     } else {
-      alertText += 'Field "Mail" must be a mail address. ';
+      alertText += 'Field "Mail" must be a valid mail address. ';
       validate.mail = false;
     }
     

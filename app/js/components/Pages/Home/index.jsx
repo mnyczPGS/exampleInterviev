@@ -12,7 +12,7 @@ import image1 from './../../../../assets/mainPage/box1.jpg';
 import image2 from './../../../../assets/mainPage/box2.jpg';
 import image3 from './../../../../assets/mainPage/box3.jpg';
 
-class Home extends Component {
+export default class Home extends Component {
   constructor(props) {
     super(props);
   }
@@ -28,7 +28,3 @@ class Home extends Component {
     );
   }
 }
-function mapDispatchToProps(dispatch) {
-  return { actions: bindActionCreators(showAlert, dispatch) }
-}
-export default connect(mapDispatchToProps)(Home);
