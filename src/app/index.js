@@ -4,8 +4,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore, compose } from 'redux';
 import { Provider } from 'react-redux';
-import App from './components/App.jsx';
-import reducer from './reducers';
+import App from './App.jsx';
+import reducer from './services/reducers';
 
 const enhancers = compose(
   window.devToolsExtension ? window.devToolsExtension() : f => f

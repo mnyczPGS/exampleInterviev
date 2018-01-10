@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router';
 import Home from './Home';
 import Contact from './Contact';
 import Skicams from './Skicams';
-import { Button, Container, Col, Row } from 'reactstrap';
+import { Container } from 'reactstrap';
 
 export default class Main extends Component {
   render() {

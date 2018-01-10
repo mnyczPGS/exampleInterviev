@@ -39,9 +39,7 @@ export default class Skicams extends Component {
 
   setData(data) {
     let cams = [];
-
     let count = Object.keys(data).length;
-
     let countImg = 1;
 
     for (let i = 0; i < count; i++) {
@@ -50,22 +48,23 @@ export default class Skicams extends Component {
         if (data[i].name == 'Andalo' || data[i].name == 'Monte Bondone') {
           let array = [];
           let name = "";
+
           for (let j = 0; j < countCam; j++) {
             if (data[i].cams[j] != null) {
               name = data[i].name;
               array.push(data[i].cams[j].url);
               countImg++;
-            }
-            else {
+            } else {
               countCam++;
             }
           }
+
           cams.push({ name, array })
         }
-      }
-      else {
+      } else {
         count++;
       }
+      
       this.setState({ cams });
     }
   }

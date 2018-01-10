@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { Button, Container, Col, Row } from 'reactstrap';
-import { showAlert } from '../../../actions';
+import { showAlert } from '../../services/actions';
+
+const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 class Home extends Component {
   constructor(props) {
@@ -33,7 +35,7 @@ class Home extends Component {
       validate.name = true;
     }
 
-    let regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    
     if (regex.test(this.state.mail)) {
       validate.mail = true;
     } else {
@@ -41,11 +43,7 @@ class Home extends Component {
       validate.mail = false;
     }
     
-    if (validate.name && validate.mail) {
-      isDanger = false;
-    } else {
-      isDanger = true;
-    }
+    isDanger = !(validate.name && validate.mail);
 
     this.props.showAlert(alertText.length == 0 ? 'Form is validate' : alertText, isDanger ? 'danger' : 'success')
     this.setState({ validate })

@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { BrowserRouter, HashRouter } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
-import Alerts from './Global/Alerts.jsx';
-import Header from './Global/Header.jsx';
-import Footer from './Global/Footer.jsx';
-import Main from './Pages/Main.jsx';
+import Alerts from './components/Alerts';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Main from './pages/Main.jsx';
 
 class App extends Component {
   constructor(props) {
