@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import './Contact.scss';
 import { Button, Container, Col, Row } from 'reactstrap';
 import { showAlert } from '../../../actions';
 

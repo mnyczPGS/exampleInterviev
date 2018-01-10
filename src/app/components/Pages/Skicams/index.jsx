@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Row } from 'reactstrap';
 import Cam from './Cam';
-import './Skicams.scss';
 
 export default class Skicams extends Component {
   constructor(props) {

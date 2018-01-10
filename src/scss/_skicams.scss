@@ -1,6 +1,6 @@
 .Skicams{
   .cam-container{
-    background-color: white;
+    background-color: $white-color;
 
     &-top{
       height: 50px;
@@ -19,7 +19,6 @@
     }
 
     &-cams{
-      background-color: whitesmoke;
       text-align: center;
 
       img{

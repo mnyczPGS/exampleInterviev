@@ -10,15 +10,15 @@
     .box {
       .content {
         margin-bottom: 20px;
-        background: white;
+        background: $white-color;
         padding: 0;
-        border: 1px solid lightgray;
+        border: 1px solid $border-default-color;
         margin: 10px;
-        box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.239);
+        box-shadow: $box-shadow;
 
         .texts {
           padding: 10px;
-          color: #646464;
+          color: $font-default-color;
 
           .title {
             margin: 10px 0;

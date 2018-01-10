@@ -1,5 +1,10 @@
+@import './variable';
+@import './home';
+@import './skicams';
+@import './contact';
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif !important;
   min-width: 320px;
 
   .Header {
@@ -8,7 +13,7 @@ body {
     left: 0;
     width: 100vw;
     height: 115px;
-    background-color: white;
+    background-color: $white-color;
 
     .menu {
       display: inline-flex;
@@ -20,18 +25,18 @@ body {
           padding: 13px 5px;
           line-height: 50px;
           font-weight: 500;
-          color: #2d2d2d;
+          color: $font-default-color;
           transition: color .2s linear;
 
           &:hover {
-            color: #ff7911;
+            color: $pgs-orange;
             text-decoration: none;
           }
         }
 
         .active{
-          color: #ff7911;
-          border-bottom: 2px solid #ff7911;
+          color: $pgs-orange;
+          border-bottom: 2px solid $pgs-orange;
         }
       }
     }
@@ -40,22 +45,22 @@ body {
   .Content {
     min-height: 100vh;
     padding-top: 150px;
-    background-color: #f8f8f8;
+    background-color: $content-background-color;
   }
 
   .Footer {
     height: 115px;
-    background-color: #282828;
+    background-color: $footer-background-color;
     margin-top: -115px;
     padding-top: 10px;
 
     .powered {
       margin: 25px auto;
-      color: #777;
+      color: $gray-color;
       height: 45px;
       width: 252px;
       padding: 20px;
-      border-top: 1px solid gray;
+      border-top: 1px solid $gray-color;
       font-size: 10px;
       text-align: center;
     }
